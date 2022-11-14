@@ -70,13 +70,6 @@ for index, row in df3.iterrows():
         counter = counter+1
     counter=counter+1
 
-
-
-
-# Distidf = Distidf.set_index("partno")
-# Distidf = Distidf.reindex(index=bomdf['partno'])
-# Distidf = Distidf.reset_index()
-
 combineddf = pd.concat([df4, df5],axis=1, keys = ['BomData', 'Distidf'])
 # print(df3)
 print(combineddf)
